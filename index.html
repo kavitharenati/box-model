@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 2px solid pink;
+
+        border-collapse: collapse;
+        box-shadow: 5px 5px 5px blueviolet;
+      }
+      h2 {
+        text-shadow: 2px 2px 2px green;
+        border: 2px solid;
+      }
+      .t1 {
+        height: 40vh;
+        width: 50vw;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      .t2 {
+        height: 50vh;
+        width: 50vw;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      .t3 {
+        height: 60vh;
+        width: 50vw;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      @media screen and (max-width: 425px) {
+        .t2,
+        .t3 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 426px) and (max-width: 760px) {
+        .t1,
+        .t3 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 761px) {
+        .t1,
+        .t2 {
+          display: none;
+        }
+      }
+      .cc{
+        background-image: linear-gradient(to left, yellow,pink,green);
+      }
+     
+    </style>
+  </head>
+  <body>
+
+
+    <table class="t1">
+      <caption>
+        <h2>BOX MODEL-1</h2>
+      </caption>
+      <tr>
+        <td class="cc"></td>
+        <td style="background-color: orange;"></td>
+      </tr>
+      <tr>
+        <td style="background-color: skyblue"></td>
+        <td style="background-color: red"></td>
+      </tr>
+    </table>
+
+
+    <table class="t2">
+      <caption>
+        <h2>BOX MODEL-2</h2>
+      </caption>
+      <tr>
+        <td style="background-color: pink"></td>
+        <td style="background-color: yellow"></td>
+        <td style="background-color: green"></td>
+      </tr>
+      <tr>
+        <td style="background-color: pink"></td>
+        <td style="background-color: yellow"></td>
+        <td style="background-color: green"></td>
+      </tr>
+      <tr>
+        <td style="background-color: pink"></td>
+        <td style="background-color: yellow"></td>
+        <td style="background-color: green"></td>
+      </tr>
+    </table>
+
+
+    <table class="t3">
+      <caption>
+        <h2>BOX MODEL-3</h2>
+      </caption>
+      <tr>
+        <td style="background-color: orange"></td>
+        <td style="background-color: blue"></td>
+        <td style="background-color: skyblue"></td>
+        <td style="background-color: yellowgreen"></td>
+      </tr>
+      <tr>
+        <td style="background-color: green"></td>
+        <td style="background-color: red"></td>
+        <td style="background-color: pink"></td>
+        <td style="background-color: yellow"></td>
+      </tr>
+      <tr>
+        <td style="background-color: blueviolet"></td>
+        <td style="background-color: burlywood"></td>
+        <td style="background-color: brown"></td>
+        <td style="background-color: yellow"></td>
+      </tr>
+      <tr>
+        <td style="background-color: orange"></td>
+        <td style="background-color: tomato"></td>
+        <td style="background-color: blue"></td>
+        <td style="background-color: pink"></td>
+      </tr>
+    </table>
+    
+
+
+  </body>
+</html>
